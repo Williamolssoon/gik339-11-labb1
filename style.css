@@ -47,7 +47,7 @@ label{
 
 .textfield{
     flex-basis: calc(70% - 2rem);
-    height: 1.2rem;
+    min-height: 1.5rem;
     border-radius: .25rem;
 }
 
@@ -59,7 +59,7 @@ label{
     background-color: var(--clr3);
 }
 
-#divID{
+#divId{
     flex-basis: 100%;
     min-height: 1rem;
     border: 2px solid black;
