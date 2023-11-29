@@ -4,17 +4,16 @@ const textfields = document.querySelectorAll(".textfield");
 
 const button = document.querySelector("#button");
 
-const divs = document.getElementById("divId");
+const divRuta = document.getElementById("divId");
 
 textfields.forEach((field) => field.addEventListener("blur", handleBlur));
 
 checkbox.addEventListener("change", function(){
-  divs.style.backgroundColor = textfields[0].value;
+  divRuta.style.backgroundColor = textfields[0].value;
 });
 
-button.addEventListener("click", function(e){
-  e.preventDefault();  
-  divs.remove();
+button.addEventListener("click", function(){ 
+  divRuta.remove();
 });
 
 function handleBlur(e) {
@@ -24,7 +23,7 @@ function handleBlur(e) {
   console.log(name);
   
     if(name == "content"){
-      divs.innerHTML = value;
+      divRuta.innerHTML = value;
     }
   }
 
